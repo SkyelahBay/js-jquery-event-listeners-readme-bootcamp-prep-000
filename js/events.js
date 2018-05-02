@@ -8,7 +8,7 @@ function frameIt(){
 } //if using an arrow function, cannot use $(this) so use target instead.
 
 function pressIt(){
-  $('#typing').on('keydown', function(e){
+  $('#typing').on('keydown', (e) =>{
     e.which === 71 ? alert('Pressed G!') : null;
   });
 }
