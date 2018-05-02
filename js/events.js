@@ -4,7 +4,7 @@ function getIt(){
 }
 
 function frameIt(){
-  $('img').on('load', (e)=>{$(e.currentTarget)})
+  $('img').on('load', (e)=>{$(e.currentTarget).addClass('tasty');});
 }
 
 function pressIt(){
