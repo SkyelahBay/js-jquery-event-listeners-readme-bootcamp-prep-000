@@ -4,12 +4,12 @@ function getIt(){
 }
 
 function frameIt(){
-  $('img').on('load', () =>{this.classList.add('tasty'); return;});
+  $('img').on('load', function(){$(this).addClass('tasty'); return;});
 }
 
 function pressIt(){
   $('#typing').on('keydown', function(e){
-    e === 71 ? alert('Pressed G!') : null;
+    e.which === 71 ? alert('Pressed G!') : null;
   });
 }
 
