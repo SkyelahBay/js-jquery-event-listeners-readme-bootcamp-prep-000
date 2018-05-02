@@ -4,7 +4,7 @@ function getIt(){
 }
 
 function frameIt(){
-  $('img').on('click', (e) => {$(e.currentTarget).addClass('tasty');});
+  $('img').on('load', (e) => {$(e.currentTarget).addClass('tasty');});
 } //if using an arrow function, cannot use $(this) so use target instead.
 
 function pressIt(){
